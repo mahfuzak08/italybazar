@@ -382,6 +382,6 @@
             <ul class="collapse list-unstyled" id="sactive" data-parent="#accordion">
 
                 <li><a href="{{route('admin-activation-form')}}"> {{ __('Activation') }}</a></li>
-                <li><a href="{{route('admin-generate-backup')}}"> {{ __('Generate Backup') }}</a></li>
+                {{-- <li><a href="{{route('admin-generate-backup')}}"> {{ __('Generate Backup') }}</a></li> --}}
             </ul>
         </li>

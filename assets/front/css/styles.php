@@ -546,6 +546,10 @@ color: <?php echo $color; ?>;
                   background: #fff;
                   color: <?php echo $color; ?>;
                 }
+                .help-line-p{
+                  background: <?php echo $color; ?>;
+                  border: 1px solid <?php echo $color; ?>;
+                }
           .product-details-page .categori .owl-carousel .owl-controls .owl-nav .owl-prev,
           .product-details-page .categori .owl-carousel .owl-controls .owl-nav .owl-next {
             color: <?php echo $color; ?>;

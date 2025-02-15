@@ -350,6 +350,7 @@
                     {{ $langg->lang77 }}: <span class="idno">{{ $productt->sku }}</span>
                   </p>
                   @endif
+                  <p class="help-line-p">{{ $langg->lang7701 }}: {{ $gs->hlno }}</p>
       @if($gs->is_report)
 
       {{-- PRODUCT REPORT SECTION --}}

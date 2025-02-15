@@ -566,7 +566,15 @@ div#comment-log-reg {
 .p-sku span{
   font-weight: 600;
 }
-
+.help-line-p
+{
+  font-size: 15px;
+  font-weight: 700;
+  padding: 5px 10px;
+  background-color: #151574;
+  color: #FFFFFF;
+  border-radius: 20px;
+}
 .mybadge{
   font-size: 13px;
   color: #fff;

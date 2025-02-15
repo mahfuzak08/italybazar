@@ -110,6 +110,18 @@
                           </div>
                         </div>
 
+                        <div class="row justify-content-center">
+                          <div class="col-lg-3">
+                            <div class="left-area">
+                                <h4 class="heading">{{ __('Help Line Number') }} *
+                                  </h4>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <input type="text" class="input-field" placeholder="{{ __('Write Your Help Line Number Here') }}" name="hlno" value="{{ $gs->hlno }}" required="">
+                          </div>
+                        </div>
+
 
                         <div class="row justify-content-center">
                             <div class="col-lg-3">
