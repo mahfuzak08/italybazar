@@ -133,7 +133,7 @@ $info = Information::first();
       <div  class="ntt">
         <div  class="ntt-main">
           <div  class="ntt-left">
-            <h3 >{!! $info->copyright !!} | <a href="https://ELITEDESIGN.COM.BD/" target="_blank"><span style="color: white;">Website Designed by: Elite Design</span></a>
+            <h3 >{!! $info->copyright !!} | <a href="https://absoft-bd.com" target="_blank"><span style="color: white;">Website Designed by: ABSoft-BD.COM</span></a>
             </h3>
           </div>
         </div>
