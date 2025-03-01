@@ -240,7 +240,9 @@ img.d-block.w-100 {
   border-radius: 7px;
   height: 320px;
 }
-
+.h-600{
+  height: 500px !important;
+}
 i.far.fa-heart {
   color: black;
 }

@@ -46,7 +46,7 @@
 <div class="desktop home-menu">
     <div class="container-fluid-fluid">
         <div class="header-navbar">
-            <div class="header-main-nav" style="box-shadow: 2px 5px 7px 0px #808080a6; margin-bottom: 30px;">
+            <div class="header-main-nav">
                 <!-- Start Mainmanu Nav -->
                 <nav class="mainmenu-nav pe-5">
                  
@@ -85,7 +85,7 @@
                 @foreach($sliders as $key=>$s)
                 <div class="carousel-item  {{ $key==0 ?'active':''}}">
                   	<a href="{{$s->link}}">
-                    	<img src="{{ getImage('sliders', $s->image) }}" class="d-block w-100" alt="..." />
+                    	<img src="{{ getImage('sliders', $s->image) }}" class="d-block w-100 h-600" alt="..." />
                   	</a>
                 </div>
                 @endforeach
