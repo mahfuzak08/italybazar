@@ -132,6 +132,18 @@
                                 <input type="text" id="search2" class="form-control" placeholder="product search here">
                             </div>
                         </div>
+                        <div class="col-lg-12">
+                            <div class="mb-3">
+                                <label  class="form-label">Background Color</label>
+                                <input type="color" id="bg" name="bg" value="#ffffff">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="mb-3">
+                                <label  class="form-label">Text Color</label>
+                                <input type="color" id="fcolor" name="fcolor" value="#000">
+                            </div>
+                        </div>
 
                         <input type="hidden" id="product_id" name="product_id" value="">
 
@@ -156,7 +168,7 @@
 @endsection
 
 @push('js')
-<script src="https://cdn.ckeditor.com/4.12.1/standard/ckeditor.js"></script>
+<script src="{{asset('ckeditor/ckeditor.js')}}"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script type="text/javascript">

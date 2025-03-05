@@ -44,6 +44,8 @@ class LandingPageController extends Controller
              'phone' => 'required',
              'des3' => '',
              'pay_text' => '',
+             'bg' => 'required',
+             'fcolor' => 'required',
              'product_id' => 'required'
         ]);
 
@@ -115,6 +117,8 @@ class LandingPageController extends Controller
              'phone' => '',
              'des3' => '',
              'pay_text' => '',
+             'bg' => 'required',
+             'fcolor' => 'required',
              'product_id' => ''
        ]);
 

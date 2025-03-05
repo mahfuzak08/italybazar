@@ -49,9 +49,9 @@ class ProductController extends Controller
                     });
                 }
       			
-      		if(auth()->user()->hasRole('admin')==false){
-              $query->where('user_id', auth()->user()->id);
-            }
+      		// if(auth()->user()->hasRole('admin')==false){
+            //   $query->where('user_id', auth()->user()->id);
+            // }
      
         $items=$query->latest()->paginate(30);
         // dd($items);

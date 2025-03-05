@@ -141,6 +141,18 @@
                                 <input type="text" value="{{ $item->pay_text }}" name="pay_text" class="form-control" placeholder="Title">
                             </div>
                         </div>
+                        <div class="col-lg-12">
+                            <div class="mb-3">
+                                <label  class="form-label">Background Color</label>
+                                <input type="color" id="bg" name="bg" value="{{ $item->bg }}">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="mb-3">
+                                <label  class="form-label">Text Color</label>
+                                <input type="color" id="fcolor" name="fcolor" value="{{ $item->fcolor }}">
+                            </div>
+                        </div>
 
                         <div class="col-lg-12">
                             <div class="mb-3">
@@ -158,7 +170,7 @@
 @endsection
 
 @push('js')
-<script src="https://cdn.ckeditor.com/4.12.1/standard/ckeditor.js"></script>
+<script src="{{asset('ckeditor/ckeditor.js')}}"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script type="text/javascript">
     CKEDITOR.replace('title2', {

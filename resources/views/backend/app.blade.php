@@ -124,22 +124,24 @@
                             </a>
     
                             <!-- item-->
+                            @if(auth()->user()->can('role.view'))
                             <a href="{{ route('admin.settings.index') }}" class="dropdown-item notify-item">
                                 <i class="mdi mdi-account-edit me-1"></i>
                                 <span>Settings</span>
                             </a>
+                            @endif
     
                             <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            {{-- <a href="javascript:void(0);" class="dropdown-item notify-item">
                                 <i class="mdi mdi-lifebuoy me-1"></i>
                                 <span>Support</span>
-                            </a>
+                            </a> --}}
     
                             <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            {{-- <a href="javascript:void(0);" class="dropdown-item notify-item">
                                 <i class="mdi mdi-lock-outline me-1"></i>
                                 <span>Lock Screen</span>
-                            </a>
+                            </a> --}}
     
                             <!-- item-->
                             <a class="dropdown-item notify-item" href="{{ route('logout') }}"

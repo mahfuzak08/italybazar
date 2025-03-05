@@ -51,12 +51,12 @@
 }
 .second_info{
     padding: 10px;
-    border-style: solid;
+    /* border-style: solid;
     border-width: 4px 4px 4px 4px;
     border-color: #CDDF04;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    border-radius: 5px;
+    border-radius: 5px; */
 }
 .slider_text_box{
     text-align: center;
@@ -81,14 +81,15 @@
    
 }
 .page_footer{
-    background-color: #E9E147;
+    background-color: #461E59;
     border-radius: 0px 15px 0px 15px;
-    color: #000;
+    color: #FFF;
     font-size: 22px;
     margin-top: 20px;
+    padding: 10px;
 }
 .page_footer a{
-    color: #000;
+    color: #FFF;
     text-decoration: none;
 }
 
@@ -202,11 +203,11 @@
     font-weight: 700;
     line-height: 1.3em;
     padding: 15px;
-    background-color: #F2F821;
+    /* background-color: #F2F821;
     border-style: solid;
     border-width: 5px 5px 5px 5px;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); */
 }
 .down-div .container .element-widget-cover{
     width: 100%;
@@ -255,6 +256,7 @@
 
 .form-wrapper{
     color: var(--gray);
+    background-color: #fff;
     display: inline-block;
     text-align: inherit;
     width: 100%;
@@ -277,14 +279,14 @@
 }
 .bottom_feature{
     text-align: center;
-    border-style: solid;
+    /* border-style: solid;
     border-width: 2px 2px 2px 2px;
     border-radius: 6px 6px 6px 6px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); */
     padding: 10px;
 }
 .form-wrapper h3 {
-    color: #F30505;
+    color: #000;
     font-weight: 600;
 }
 .form-wrapper .product-box-title{
@@ -606,7 +608,7 @@
 }
 .checkout-payment .payment_methods{
     margin: 1em 0 0;
-    background-color: #00DC78;
+    background-color:#dbdada;
     padding: 15px;
 }
 .checkout-payment .payment_methods .payment_method{
@@ -655,7 +657,7 @@
 .place-order button{
     border: 1px solid;
     border-color: var(--light );
-    background-color: #0F681B;
+    background-color: red;
     font-family: inherit;
     font-weight: inherit;
     letter-spacing: 0.5px;

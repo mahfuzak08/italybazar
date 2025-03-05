@@ -28,6 +28,30 @@
         text-align: center;
     }
 }
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Container div */
+        .image-container {
+            width: 100%;
+            overflow: hidden; /* Ensures the image doesn't overflow the container */
+        }
+
+        /* Responsive image */
+        .responsive-image {
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            height: auto;
+            max-width: 100%;
+        }
+        ol, ul{
+            padding-left: none;
+        }
    </style>
 
 {!!\App\Models\Information::value('tracking_code')!!}
@@ -35,20 +59,20 @@
 
 
 </head>
-<body>
+<body style="text-align: center;background:{{$ln_pg->bg}};color: {{$ln_pg->fcolor}};">
     @php
         // dd($ln_pg);
     @endphp
    <div class="main-wrapper">
         <div class="top-div">
             <div class="container">
-                <div class="element-width" data-aos="fade-down" data-aos-duration="1000">
-                    <div class="top-box-weight">
-                        <h2 class="top-heading-title">
-                        {{ $ln_pg->title1 }}
-                        </h2>
-                    </div>
-                </div>
+                {{-- <div class="element-width" data-aos="fade-down" data-aos-duration="1000"> --}}
+                    {{-- <div class="top-box-weight"> --}}
+                        <h1 class="top-heading-title">
+                            {{ $ln_pg->title1 }}
+                        </h1>
+                    {{-- </div> --}}
+                {{-- </div> --}}
                 {{-- <div class="text-info-box qa" data-aos="fade-up">
                         <h2 class="top-heading-title">
                         {!! $ln_pg->title2 !!}
@@ -59,30 +83,28 @@
             <div class="second_info">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-12">
-                            <div class="l_page_img text-center">
-                                <img src="{{ asset('landing_pages/'.$ln_pg->image) }}" alt="img">
-                            </div>
+                        <div class="image-container">
+                            <img src="{{ asset('landing_pages/'.$ln_pg->image) }}" alt="{{$ln_pg->title1}}" class="responsive-image">
                         </div>
-                        <div class="col-md-6 col-12">
-                            <div class="slider_text_box">
-                                {!! $ln_pg->title2 !!}
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>{!! $ln_pg->title2 !!}</h3>
                         </div>
-                    </div>  
+                    </div>
                 </div>           
             </div>
         </div>
         <style>
             .video-box iframe {
-                width: 100% !important;
+                margin: 10px;
             }
             ul {
               list-style: none;
             }
             
             ul li {
-              padding-left: 20px; 
+              /* padding-left: 20px;  */
               line-height: 1.5; 
             }
             
@@ -98,6 +120,9 @@
             } 
             .top-heading-title {
                 /*color: black !important;*/
+                font-size: 35px;
+                font-weight: 900;
+                padding: 10px;
             }
             .top_div {
                 position: relative;
@@ -206,7 +231,7 @@
                 }
                 
                 .down-div .container .element-widget .top-heading-title {
-                    font-size: 17px !important;
+                    font-size: 25px !important;
                 }
                 
                 .down-div .container .element-widget-wrap {
@@ -222,7 +247,7 @@
                 }
                 
                 .down-div .container .element-widget .top-heading-title {
-                    font-size: 17px !important;
+                    font-size: 25px !important;
                     line-height: 1.3em !important;
                 }
                 
@@ -235,7 +260,7 @@
                 }
                 
                 .down-div .container .element-widget .top-heading-title {
-                    font-size: 17px !important;
+                    font-size: 25px !important;
                 }
                 
                 .address_section {
@@ -308,7 +333,7 @@
                 }
                 
                 .down-div .container .element-widget .top-heading-title {
-                    font-size: 17px !important;
+                    font-size: 25px !important;
                 }
                 
                 .down-div .container .element-widget-wrap {
@@ -324,7 +349,7 @@
                 }
                 
                 .down-div .container .element-widget .top-heading-title {
-                    font-size: 17px !important;
+                    font-size: 25px !important;
                     line-height: 1.3em !important;
                 }
                 
@@ -337,7 +362,7 @@
                 }
                 
                 .down-div .container .element-widget .top-heading-title {
-                    font-size: 17px !important;
+                    font-size: 25px !important;
                 }
                 
                 .address_section {
@@ -415,7 +440,7 @@
                 }
                 
                 .down-div .container .element-widget .top-heading-title {
-                    font-size: 17px !important;
+                    font-size: 25px !important;
                 }
                 
                 .down-div .container .element-widget-wrap {
@@ -431,7 +456,7 @@
                 }
                 
                 .down-div .container .element-widget .top-heading-title {
-                    font-size: 17px !important;
+                    font-size: 25px !important;
                     line-height: 1.3em !important;
                 }
                 
@@ -444,7 +469,7 @@
                 }
                 
                 .down-div .container .element-widget .top-heading-title {
-                    font-size: 17px !important;
+                    font-size: 25px !important;
                 }
                 
                 .address_section {
@@ -532,7 +557,7 @@
                 }
                 
                 .down-div .container .element-widget .top-heading-title {
-                    font-size: 17px !important;
+                    font-size: 25px !important;
                 }
                 
                 .down-div .container .element-widget-wrap {
@@ -548,7 +573,7 @@
                 }
                 
                 .down-div .container .element-widget .top-heading-title {
-                    font-size: 17px !important;
+                    font-size: 25px !important;
                     line-height: 1.3em !important;
                 }
                 
@@ -561,7 +586,7 @@
                 }
                 
                 .down-div .container .element-widget .top-heading-title {
-                    font-size: 17px !important;
+                    font-size: 25px !important;
                 }
                 
                 .address_section {
@@ -651,7 +676,7 @@
                 }
                 
                 .down-div .container .element-widget .top-heading-title {
-                    font-size: 17px !important;
+                    font-size: 25px !important;
                 }
                 
                 .down-div .container .element-widget-wrap {
@@ -667,7 +692,7 @@
                 }
                 
                 .down-div .container .element-widget .top-heading-title {
-                    font-size: 17px !important;
+                    font-size: 25px !important;
                     line-height: 1.3em !important;
                 }
                 
@@ -680,7 +705,7 @@
                 }
                 
                 .down-div .container .element-widget .top-heading-title {
-                    font-size: 17px !important;
+                    font-size: 25px !important;
                 }
                 
                 .address_section {
@@ -761,7 +786,7 @@
                     padding-left: 0px !important;
                 }
                 .down-div .container .element-widget .top-heading-title {
-                    font-size: 17px !important;
+                    font-size: 25px !important;
                 }
                 .down-div .container .element-widget-wrap {
                     padding: 10px;
@@ -773,7 +798,7 @@
                     padding-left: 0px !important;
                 }
                 .down-div .container .element-widget .top-heading-title {
-                    font-size: 17px !important;
+                    font-size: 25px !important;
                     line-height: 1.3em !important;
                 }
                 ul {
@@ -848,14 +873,11 @@
 
 
         </style>
-        <div class="down-div">
+        <div class="down-div" style="padding-top: 10px;background: {{$ln_pg->bg}};color: {{$ln_pg->fcolor}};">
             <div class="container">
                 <div class="row">
-                    <div class="video-box" data-aos="zoom-in">
-                      {!! $ln_pg->video_url !!}
-                        
-                    </div>
-                    <div class="ani-btn-box" style="margin-top: 45px;">
+                    {!! $ln_pg->video_url !!}
+                    <div class="ani-btn-box" style="margin: 45px 0px;">
                         <div class="inner-padding" data-aos="fade-up">
                             <button id="order_btn" class="btn btn-danger" style="border: 3px solid white;">
                             অর্ডার করতে চাই
@@ -863,31 +885,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="element-widget-cover">
-                    <div class="element-widget-wrap">
-                        <div class="element-widget slide_top">
-                            <div class="top-heading-title">
-                            {{ $ln_pg->feature }}
-                            </div>
-                        </div>
-                        <div class="elementor-widget-wrap elementor-element-populated">
-                            <div class="element-widget overview des_img" style="margin-top: 40px;color: black;">                          
-                                {!! $ln_pg->des1 !!}                           
-                            </div>
-                        </div>
+                <div class="element-widget slide_top">
+                    <div class="top-heading-title">
+                        {{ $ln_pg->feature }}
                     </div>
-
                 </div>
+                <div class="row">
+                    <div class="col-12">
+                        {!! $ln_pg->des1 !!}                           
+                    </div>
+                </div>
+                    
                 <div class="element-widget slide_top">
                     <div class="top-heading-title">
                      {!! $ln_pg->title3 !!}
                     </div>
                 </div>
-                <div class="element-widget-cover">
-                    <div class="element-widget-wrap">
-                        <div class="element-widget feature-list des_three">                         
-                            {!! $ln_pg->des3 !!}
-                        </div>
+                <div class="row">
+                    <div class="col-12">
+                        {!! $ln_pg->des3 !!}
                     </div>
                 </div>
                 <div class="bottom_feature">
@@ -1125,7 +1141,7 @@
           
         <div class="footer">
             <div class="copyright">
-                <small> 2023 VesojCity.com | Developed By Vesojcity</small>
+                <small> 2025 italybazar.com | Developed By Italy Bazar</small>
             </div>
         </div>
     </div>
